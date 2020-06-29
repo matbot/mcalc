@@ -16,6 +16,7 @@ class _CalculatorState extends State<Calculator> {
 
   @override
   void initState() {
+    // Data stream between key controller and calc processor.
     KeyController.listen((event) => Processor.process(event));
     Processor.listen((data) => setState(() {_output = data;}));
     Processor.refresh();
