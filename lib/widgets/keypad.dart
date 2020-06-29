@@ -1,48 +1,49 @@
 import 'package:flutter/widgets.dart';
-import 'package:mcalc/widgets/calculatorkey.dart';
+import 'package:mcalc/widgets/calculatorkeybutton.dart';
 
 class KeyPad extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // TODO: build layouts for different calculator modes.
     return Column(
       children: <Widget>[
         Row(
           children: <Widget>[
-            CalculatorKey(symbol: Keys.clear),
-            CalculatorKey(symbol: Keys.sign),
-            CalculatorKey(symbol: Keys.percent),
-            CalculatorKey(symbol: Keys.divide),
+            CalculatorKeyButton(symbol: Keys.clear),
+            CalculatorKeyButton(symbol: Keys.sign),
+            CalculatorKeyButton(symbol: Keys.percent),
+            CalculatorKeyButton(symbol: Keys.divide),
           ],
         ),
         Row(
           children: <Widget>[
-            CalculatorKey(symbol: Keys.seven),
-            CalculatorKey(symbol: Keys.eight),
-            CalculatorKey(symbol: Keys.nine),
-            CalculatorKey(symbol: Keys.multiply),
+            CalculatorKeyButton(symbol: Keys.seven),
+            CalculatorKeyButton(symbol: Keys.eight),
+            CalculatorKeyButton(symbol: Keys.nine),
+            CalculatorKeyButton(symbol: Keys.multiply),
           ],
         ),
         Row(
           children: <Widget>[
-            CalculatorKey(symbol: Keys.four),
-            CalculatorKey(symbol: Keys.five),
-            CalculatorKey(symbol: Keys.six),
-            CalculatorKey(symbol: Keys.subtract),
+            CalculatorKeyButton(symbol: Keys.four),
+            CalculatorKeyButton(symbol: Keys.five),
+            CalculatorKeyButton(symbol: Keys.six),
+            CalculatorKeyButton(symbol: Keys.subtract),
           ],
         ),
         Row(
           children: <Widget>[
-            CalculatorKey(symbol: Keys.one),
-            CalculatorKey(symbol: Keys.two),
-            CalculatorKey(symbol: Keys.three),
-            CalculatorKey(symbol: Keys.add),
+            CalculatorKeyButton(symbol: Keys.one),
+            CalculatorKeyButton(symbol: Keys.two),
+            CalculatorKeyButton(symbol: Keys.three),
+            CalculatorKeyButton(symbol: Keys.add),
           ],
         ),
         Row(
           children: <Widget>[
-            CalculatorKey(symbol: Keys.zero),
-            CalculatorKey(symbol: Keys.decimal),
-            CalculatorKey(symbol: Keys.equals),
+            CalculatorKeyButton(symbol: Keys.zero),
+            CalculatorKeyButton(symbol: Keys.decimal),
+            CalculatorKeyButton(symbol: Keys.equals),
           ],
         ),
       ],
